@@ -2,18 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>One Piece r/ Political Compass</title>
   <style>
-    body { font-family: sans-serif; padding: 20px; background: #f8f8f8; }
-    h1 { text-align: center; }
-    form { max-width: 700px; margin: auto; }
-    .question { margin-bottom: 20px; }
-    .question p { margin: 0 0 8px 0; }
-    label { display: block; margin-bottom: 5px; }
-    button { display: block; margin: 30px auto; padding: 10px 20px; font-size: 16px; }
-    #result { text-align: center; font-size: 24px; margin-top: 40px; }
-    canvas { display: block; margin: 20px auto; border: 1px solid #000; background: #fff; }
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f8f8f8;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 700px;
+      margin: auto;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question p {
+      margin: 0 0 8px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    button {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    #result {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 40px;
+    }
+    canvas {
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #000;
+      background: #fff;
+    }
   </style>
 </head>
 <body>
@@ -29,19 +59,19 @@
     </div>
     <div class="question">
       <p>2. The r/OnePiece subreddit is too strict and sanitized.</p>
-      <label><input type="radio" name="q2" value="2" required> Strongly Agree</label>
-      <label><input type="radio" name="q2" value="1"> Agree</label>
+      <label><input type="radio" name="q2" value="-2" required> Strongly Agree</label>
+      <label><input type="radio" name="q2" value="-1"> Agree</label>
       <label><input type="radio" name="q2" value="0"> Neutral</label>
-      <label><input type="radio" name="q2" value="-1"> Disagree</label>
-      <label><input type="radio" name="q2" value="-2"> Strongly Disagree</label>
+      <label><input type="radio" name="q2" value="1"> Disagree</label>
+      <label><input type="radio" name="q2" value="2"> Strongly Disagree</label>
     </div>
     <div class="question">
       <p>3. r/Piratefolk has better discussions than r/OnePiece.</p>
-      <label><input type="radio" name="q3" value="2" required> Strongly Agree</label>
-      <label><input type="radio" name="q3" value="1"> Agree</label>
+      <label><input type="radio" name="q3" value="-2" required> Strongly Agree</label>
+      <label><input type="radio" name="q3" value="-1"> Agree</label>
       <label><input type="radio" name="q3" value="0"> Neutral</label>
-      <label><input type="radio" name="q3" value="-1"> Disagree</label>
-      <label><input type="radio" name="q3" value="-2"> Strongly Disagree</label>
+      <label><input type="radio" name="q3" value="1"> Disagree</label>
+      <label><input type="radio" name="q3" value="2"> Strongly Disagree</label>
     </div>
     <div class="question">
       <p>4. Wano was a masterpiece and criticism of it is unwarranted.</p>
@@ -53,11 +83,11 @@
     </div>
     <div class="question">
       <p>5. Meme culture enhances One Piece community discussion.</p>
-      <label><input type="radio" name="q5" value="2" required> Strongly Agree</label>
-      <label><input type="radio" name="q5" value="1"> Agree</label>
+      <label><input type="radio" name="q5" value="-2" required> Strongly Agree</label>
+      <label><input type="radio" name="q5" value="-1"> Agree</label>
       <label><input type="radio" name="q5" value="0"> Neutral</label>
-      <label><input type="radio" name="q5" value="-1"> Disagree</label>
-      <label><input type="radio" name="q5" value="-2"> Strongly Disagree</label>
+      <label><input type="radio" name="q5" value="1"> Disagree</label>
+      <label><input type="radio" name="q5" value="2"> Strongly Disagree</label>
     </div>
     <div class="question">
       <p>6. People overanalyze the story instead of just enjoying it.</p>
@@ -69,11 +99,11 @@
     </div>
     <div class="question">
       <p>7. The mods of r/OnePiece do a good job managing discussion.</p>
-      <label><input type="radio" name="q7" value="-2" required> Strongly Agree</label>
-      <label><input type="radio" name="q7" value="-1"> Agree</label>
+      <label><input type="radio" name="q7" value="2" required> Strongly Agree</label>
+      <label><input type="radio" name="q7" value="1"> Agree</label>
       <label><input type="radio" name="q7" value="0"> Neutral</label>
-      <label><input type="radio" name="q7" value="1"> Disagree</label>
-      <label><input type="radio" name="q7" value="2"> Strongly Disagree</label>
+      <label><input type="radio" name="q7" value="-1"> Disagree</label>
+      <label><input type="radio" name="q7" value="-2"> Strongly Disagree</label>
     </div>
     <div class="question">
       <p>8. Criticism of One Piece is often rooted in entitlement or misunderstanding.</p>
@@ -85,14 +115,14 @@
     </div>
     <div class="question">
       <p>9. r/Piratefolk is too negative or cynical.</p>
-      <label><input type="radio" name="q9" value="-2" required> Strongly Agree</label>
-      <label><input type="radio" name="q9" value="-1"> Agree</label>
+      <label><input type="radio" name="q9" value="2" required> Strongly Agree</label>
+      <label><input type="radio" name="q9" value="1"> Agree</label>
       <label><input type="radio" name="q9" value="0"> Neutral</label>
-      <label><input type="radio" name="q9" value="1"> Disagree</label>
-      <label><input type="radio" name="q9" value="2"> Strongly Disagree</label>
+      <label><input type="radio" name="q9" value="-1"> Disagree</label>
+      <label><input type="radio" name="q9" value="-2"> Strongly Disagree</label>
     </div>
     <div class="question">
-      <p>10. It's fine to treat One Piece like any other shounen. It’s not that deep.</p>
+      <p>10. It's fine to treat One Piece like any other shounen. It's not that deep.</p>
       <label><input type="radio" name="q10" value="-2" required> Strongly Agree</label>
       <label><input type="radio" name="q10" value="-1"> Agree</label>
       <label><input type="radio" name="q10" value="0"> Neutral</label>
@@ -107,25 +137,19 @@
 
   <script>
     const quiz = document.getElementById("quiz");
+    const result = document.getElementById("result");
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
     const center = 150;
 
-    quiz.addEventListener("submit", function(e) {
-      e.preventDefault();
-      const form = new FormData(quiz);
-      const answers = [...form.values()].map(Number);
-
-      let vertical = answers[0] + answers[3] + answers[5] + answers[7] + answers[9];
-      let horizontal = answers[1] + answers[2] + answers[4] + answers[6] + answers[8];
-
-      vertical = Math.max(-10, Math.min(10, vertical));
-      horizontal = Math.max(-10, Math.min(10, horizontal));
-
+    // Draw the initial grid
+    function drawGrid() {
+      // Clear and draw background
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.fillStyle = "#fff";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+      // Draw axis lines
       ctx.strokeStyle = "#000";
       ctx.beginPath();
       ctx.moveTo(center, 0);
@@ -134,27 +158,68 @@
       ctx.lineTo(300, center);
       ctx.stroke();
 
+      // Axis labels
       ctx.font = "12px sans-serif";
       ctx.fillStyle = "#000";
-      ctx.fillText("GODA", center - 10, 15);
-      ctx.fillText("LODA", center - 10, 295);
+      ctx.fillText("GODA", center - 15, 15);
+      ctx.fillText("LODA", center - 15, 295);
       ctx.fillText("r/Piratefolk", 5, center - 5);
       ctx.fillText("r/OnePiece", 225, center - 5);
+    }
 
+    // Draw initial grid
+    drawGrid();
+
+    quiz.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const formData = new FormData(quiz);
+      
+      // Calculate vertical score (GODA-LODA axis)
+      let vertical = 0;
+      vertical += parseInt(formData.get("q1") || 0); // Question 1
+      vertical += parseInt(formData.get("q4") || 0); // Question 4
+      vertical += parseInt(formData.get("q6") || 0); // Question 6
+      vertical += parseInt(formData.get("q8") || 0); // Question 8
+      vertical += parseInt(formData.get("q10") || 0); // Question 10
+      
+      // Calculate horizontal score (r/Piratefolk-r/OnePiece axis)
+      let horizontal = 0;
+      horizontal += parseInt(formData.get("q2") || 0); // Question 2
+      horizontal += parseInt(formData.get("q3") || 0); // Question 3
+      horizontal += parseInt(formData.get("q5") || 0); // Question 5
+      horizontal += parseInt(formData.get("q7") || 0); // Question 7
+      horizontal += parseInt(formData.get("q9") || 0); // Question 9
+      
+      // Ensure values are within bounds
+      vertical = Math.max(-10, Math.min(10, vertical));
+      horizontal = Math.max(-10, Math.min(10, horizontal));
+
+      // Redraw the grid
+      drawGrid();
+
+      // Draw user's point
       const x = center + horizontal * 12;
       const y = center - vertical * 12;
       ctx.beginPath();
-      ctx.arc(x, y, 5, 0, 2 * Math.PI);
+      ctx.arc(x, y, 6, 0, 2 * Math.PI);
       ctx.fillStyle = "red";
       ctx.fill();
+      ctx.strokeStyle = "#000";
+      ctx.stroke();
 
+      // Determine quadrant
       let quadrant = "";
-      if (vertical >= 0 && horizontal >= 0) quadrant = "GODA x r/OnePiece (top right)";
-      else if (vertical >= 0 && horizontal < 0) quadrant = "GODA x r/Piratefolk (top left)";
-      else if (vertical < 0 && horizontal >= 0) quadrant = "LODA x r/OnePiece (bottom right)";
-      else quadrant = "LODA x r/Piratefolk (bottom left)";
+      if (vertical >= 0 && horizontal >= 0) {
+        quadrant = "GODA × r/OnePiece (top right)";
+      } else if (vertical >= 0 && horizontal < 0) {
+        quadrant = "GODA × r/Piratefolk (top left)";
+      } else if (vertical < 0 && horizontal >= 0) {
+        quadrant = "LODA × r/OnePiece (bottom right)";
+      } else {
+        quadrant = "LODA × r/Piratefolk (bottom left)";
+      }
 
-      document.getElementById("result").textContent = `You are in the ${quadrant} quadrant.`;
+      result.textContent = `You are in the ${quadrant} quadrant.`;
     });
   </script>
 </body>
